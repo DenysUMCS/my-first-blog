@@ -1,8 +1,10 @@
 from django.shortcuts import render
 from django.utils import timezone
 from .models import Post
-from django.shortcuts import render, get_object_or_404, redirect
+from django.shortcuts import render, get_object_or_404, redirect 
 from .forms import PostForm
+from django.template import RequestContext
+
 
 # Create your views here.
 def post_list(request):
@@ -36,3 +38,7 @@ def post_edit(request, pk):
     else:
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form})
+def handler404(request, *args, **argv):
+    response = render_to_response('404.html', {},context_instance=RequestContext(request))
+    response.status_code = 404
+    return response
