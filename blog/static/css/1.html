@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>funk.py</title>
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<pre>
+<strong>from</strong> <font color="#2040a0">math</font> <strong>import</strong> <font color="#2040a0">sqrt</font>
+
+<font color="#2040a0">def</font> <font color="#2040a0">f</font><font color="4444FF">(</font><font color="#2040a0">x</font><font color="4444FF">)</font><font color="4444FF">:</font>
+    <strong>return</strong> <font color="#2040a0">x</font><font color="4444FF">*</font><font color="4444FF">*</font><font color="#FF0000">2</font>
+
+<font color="#2040a0">g</font> <font color="4444FF">=</font> <strong>lambda</strong> <font color="#2040a0">x</font><font color="4444FF">:</font> <font color="#2040a0">x</font><font color="4444FF">*</font><font color="4444FF">*</font><font color="#FF0000">2</font>
+
+<font color="#2040a0">h</font> <font color="4444FF">=</font> <font color="#2040a0">f</font>
+
+<strong>print</strong><font color="4444FF">(</font><font color="#2040a0">f</font><font color="4444FF">(</font><font color="#FF0000">4</font><font color="4444FF">)</font><font color="4444FF">)</font>
+<strong>print</strong><font color="4444FF">(</font><font color="#2040a0">g</font><font color="4444FF">(</font><font color="#FF0000">4</font><font color="4444FF">)</font><font color="4444FF">)</font>
+<strong>print</strong><font color="4444FF">(</font><font color="#2040a0">h</font><font color="4444FF">(</font><font color="#FF0000">4</font><font color="4444FF">)</font><font color="4444FF">)</font>
+<strong>print</strong><font color="4444FF">(</font> <font color="4444FF">(</font><strong>lambda</strong> <font color="#2040a0">x</font><font color="4444FF">:</font> <font color="#2040a0">x</font><font color="4444FF">*</font><font color="4444FF">*</font><font color="#FF0000">2</font><font color="4444FF">)</font><font color="4444FF">(</font><font color="#FF0000">10</font><font color="4444FF">)</font> <font color="4444FF">)</font>
+
+<strong>print</strong><font color="4444FF">(</font><font color="#2040a0">f</font>.<font color="#2040a0">__name__</font><font color="4444FF">)</font>
+<strong>print</strong><font color="4444FF">(</font><font color="#2040a0">h</font>.<font color="#2040a0">__name__</font><font color="4444FF">)</font>
+<strong>print</strong><font color="4444FF">(</font><font color="#2040a0">g</font>.<font color="#2040a0">__name__</font><font color="4444FF">)</font>
+
+<font color="#2040a0">def</font> <font color="#2040a0">f1</font><font color="4444FF">(</font><font color="#2040a0">x</font><font color="4444FF">)</font><font color="4444FF">:</font>
+<strong>   <font color="ff0000"> def</font><font color="ff0000"> g1</font><font color="2040a0">(y)</font>:
+</strong>        <strong>return</strong> <font color="#2040a0">x</font><font color="4444FF">+</font><font color="#2040a0">y</font>
+    <strong>return</strong> <font color="#2040a0">g1</font>
+
+<strong>print</strong><font color="4444FF">(</font> <font color="#2040a0">f1</font><font color="4444FF">(</font><font color="#FF0000">3</font><font color="4444FF">)</font><font color="4444FF">(</font><font color="#FF0000">4</font><font color="4444FF">)</font> <font color="4444FF">)</font>
+
+<font color="#2040a0">lista</font> <font color="4444FF">=</font> <font color="4444FF">[</font><font color="#FF0000">1</font>, <font color="#FF0000">3</font>, <font color="#FF0000">5</font>, <font color="#FF0000">10</font>, <font color="#FF0000">19</font><font color="4444FF">]</font>
+<font color="#2040a0">lista_pierwiastkow</font> <font color="4444FF">=</font> <font color="#2040a0">list</font><font color="4444FF">(</font><font color="#2040a0">map</font><font color="4444FF">(</font> <font color="#2040a0">sqrt</font>, <font color="#2040a0">lista</font> <font color="4444FF">)</font><font color="4444FF">)</font>
+
+<strong>print</strong><font color="4444FF">(</font><font color="#2040a0">lista</font><font color="4444FF">)</font>
+<strong>print</strong><font color="4444FF">(</font><font color="#2040a0">lista_pierwiastkow</font><font color="4444FF">)</font>
+
+<strong>print</strong><font color="4444FF">(</font><font color="#2040a0">list</font><font color="4444FF">(</font> <font color="#2040a0">map</font><font color="4444FF">(</font><font color="#2040a0">f1</font><font color="4444FF">(</font><font color="#FF0000">12</font><font color="4444FF">)</font>, <font color="#2040a0">lista</font><font color="4444FF">)</font> <font color="4444FF">)</font><font color="4444FF">)</font>
+<strong>print</strong><font color="4444FF">(</font><font color="#2040a0">list</font><font color="4444FF">(</font> <font color="#2040a0">map</font><font color="4444FF">(</font><strong>lambda</strong> <font color="#2040a0">x</font><font color="4444FF">:</font> <font color="#FF0000">12</font><font color="4444FF">+</font><font color="#2040a0">x</font>, <font color="#2040a0">lista</font><font color="4444FF">)</font> <font color="4444FF">)</font><font color="4444FF">)</font>
+
+</pre>
+<hr>
+syntax highlighted by <a href="http://www.palfrader.org/code2html">Code2HTML</a>, v. 0.9.1
+</body>
+</html>

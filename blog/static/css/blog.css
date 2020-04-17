@@ -2,7 +2,6 @@ h1 a {
     color: #FCA205;
     font-family: 'Lobster';
 }
-
 .page-header {
     background-color: #ff9400;
     margin-top: 0;
@@ -34,6 +33,12 @@ h1, h2, h3, h4 {
 
 .post-form textarea, .post-form input {
     width: 100%;
+}
+
+.login-block, .login-block:hover .login-block:visited {
+    float : right;
+    margin-right: 20px;
+    margin-top: -20px;
 }
 
 .top-menu, .top-menu:hover, .top-menu:visited {
